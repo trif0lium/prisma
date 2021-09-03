@@ -18,10 +18,10 @@ iam:
   predefinedRoles:
     - clusterAdmin:
       capabilities:
-        - apiService.allCapabilities
-        - certificateSigningRequest.allCapabilities
-        - @storage.bucket.allCapabilities
-        - @storage.object.allCapabilities
+        - apiService.*
+        - certificateSigningRequest.*
+        - @storage.bucket.*
+        - @storage.object.*
     - clusterViewer:
       capabilities:
         - apiService.list
