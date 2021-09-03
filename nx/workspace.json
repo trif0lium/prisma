@@ -50,6 +50,27 @@
           }
         }
       }
+    },
+    "iam": {
+      "root": "libs/iam",
+      "sourceRoot": "libs/iam/src",
+      "projectType": "library",
+      "targets": {
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["libs/iam/**/*.ts"]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/iam"],
+          "options": {
+            "jestConfig": "libs/iam/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
     }
   },
   "cli": {

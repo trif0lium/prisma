@@ -29,6 +29,9 @@
   "projects": {
     "a": {
       "tags": []
+    },
+    "iam": {
+      "tags": []
     }
   }
 }
