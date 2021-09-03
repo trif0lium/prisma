@@ -746,7 +746,7 @@
     "@nrwl/linter" "12.8.0"
     "@nrwl/node" "12.8.0"
 
-"@nrwl/node@12.8.0":
+"@nrwl/node@12.8.0", "@nrwl/node@^12.8.0":
   version "12.8.0"
   resolved "https://registry.yarnpkg.com/@nrwl/node/-/node-12.8.0.tgz#0bf80351a744cde2b659cba3794dba9c9790fbaf"
   integrity sha512-Y6wahv/1omLgnnZJdFSj2w+GIHMmxS6vZvqU2UPBHOXoH2NPwH6Eb0iV9UXbu11sTdb8S4gtBzG9Y9FnJptXJA==
