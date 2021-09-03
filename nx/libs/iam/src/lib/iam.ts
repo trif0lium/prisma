@@ -5,17 +5,17 @@ export class Service {
 
 export class Resource {
   name: string;
-  capabilities: Capability[];
+  capabilities: string[];
 
-  constructor(name: string, capabilities: Capability[]) {
+  constructor(name: string, capabilities: string[]) {
     this.name = name;
     this.capabilities = capabilities;
   }
 }
 
-export class Capability {
-  name: string;
-  constructor(name: string) {
-    this.name = name;
-  }
-}
+// export class Capability {
+//   name: string;
+//   constructor(name: string) {
+//     this.name = name;
+//   }
+// }
