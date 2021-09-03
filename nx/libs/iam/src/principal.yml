@@ -1,0 +1,11 @@
+iam:
+  principal:
+    viewer:
+      title: Viewer
+      description: Permissions for read-only actions that do not affect state, such as viewing (but not modifying) existing resources or data.
+      permissions:
+        - roles/container.clusterViewer
+        - storage.bucket.list
+        - storage.bucket.get
+        - storage.object.list
+        - storage.object.get
