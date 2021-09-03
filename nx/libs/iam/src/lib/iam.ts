@@ -1,6 +1,11 @@
 export class Service {
   name: string;
   resources: Resource[];
+
+  constructor(name: string, resources: Resource[]) {
+    this.name = name;
+    this.resources = resources;
+  }
 }
 
 export class Resource {
