@@ -1,0 +1,28 @@
+iam:
+  app: container
+  resources:
+    - apiService:
+      capabilities:
+        - create
+        - update
+        - delete
+        - get
+        - list
+    - certificateSigningRequest:
+      capabilities:
+        - create
+        - update
+        - delete
+        - get
+        - list
+  predefinedRoles:
+    - clusterAdmin:
+      capabilities:
+        - apiService.allCapabilities
+        - certificateSigningRequest.allCapabilities
+    - clusterViewer:
+      capabilities:
+        - apiService.list
+        - apiService.get
+        - certificateSigningRequest.list
+        - certificateSigningRequest.get
