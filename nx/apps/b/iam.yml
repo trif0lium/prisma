@@ -1,0 +1,25 @@
+iam:
+  app: storage
+  resources:
+    - bucket:
+      capabilities:
+        - create
+        - update
+        - delete
+        - get
+        - list
+    - object:
+      capabilities:
+        - create
+        - update
+        - delete
+        - get
+        - list
+  predefinedRoles:
+    - storageAdmin:
+      capabilities:
+        - bucket.allCapabilities
+        - object.allCapabilities
+    - objectAdmin:
+      capabilities:
+        - object.allCapabilities
