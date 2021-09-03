@@ -1,21 +1,15 @@
-export class Resource {
+export class Service {
   name: string;
-  roles: Role[];
-
-  constructor(name: string, roles: Role[]) {
-    this.name = name;
-    this.roles = roles;
-  }
+  resources: Resource[];
 }
 
-export class Role {
+export class Resource {
   name: string;
-  description?: string;
   capabilities: Capability[];
-  constructor(name: string, capabilities: Capability[], description?: string) {
+
+  constructor(name: string, capabilities: Capability[]) {
     this.name = name;
     this.capabilities = capabilities;
-    this.description = description;
   }
 }
 
