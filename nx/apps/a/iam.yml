@@ -20,6 +20,8 @@ iam:
       capabilities:
         - apiService.allCapabilities
         - certificateSigningRequest.allCapabilities
+        - @storage.bucket.allCapabilities
+        - @storage.object.allCapabilities
     - clusterViewer:
       capabilities:
         - apiService.list
