@@ -15,13 +15,13 @@ iam:
         - delete
         - get
         - list
-  predefinedRoles:
+  roles:
     - storageAdmin:
       description: Full control of Compute Engine storage resources.
       capabilities:
-        - bucket.allCapabilities
-        - object.allCapabilities
+        - bucket.*
+        - object.*
     - objectAdmin:
       description: Full control of GCS objects.
       capabilities:
-        - object.allCapabilities
+        - object.*
