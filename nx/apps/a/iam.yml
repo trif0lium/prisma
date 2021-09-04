@@ -1,14 +1,14 @@
-iam:
+spec:
   app: container
   resources:
-    - apiService:
-      capabilities:
+    - name: apiService
+      permissions:
         - create
         - update
         - delete
         - get
         - list
-    - certificateSigningRequest:
+    - name: certificateSigningRequest
       capabilities:
         - create
         - update
@@ -16,14 +16,14 @@ iam:
         - get
         - list
   roles:
-    - clusterAdmin:
-      capabilities:
+    - name: clusterAdmin
+      permissions:
         - apiService.*
         - certificateSigningRequest.*
         - @storage.bucket.*
         - @storage.object.*
-    - clusterViewer:
-      capabilities:
+    - name: clusterViewer
+      permissions:
         - apiService.list
         - apiService.get
         - certificateSigningRequest.list
