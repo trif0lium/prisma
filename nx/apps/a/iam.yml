@@ -10,7 +10,7 @@ spec:
         - get
         - list
     - name: certificateSigningRequest
-      capabilities:
+      permissions:
         - create
         - update
         - delete
