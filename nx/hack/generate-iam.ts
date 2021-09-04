@@ -8,5 +8,6 @@ const apps = Object.entries(workspace.projects)
   .filter((prj) => prj.projectType === ProjectType.Application);
 const filePaths = apps
   .map((app) => app.root)
-  .map((r) => path.join(__dirname, '../', r, 'iam.yml'));
+  .map((r) => path.join(__dirname, '../', r, 'iam.yml'))
+  .filter((path) => fs.existsSync(path));
 console.log(filePaths);
