@@ -21,8 +21,8 @@ spec:
       permissions:
         - apiService.*
         - certificateSigningRequest.*
-        - @storage.bucket.*
-        - @storage.object.*
+        - //storage.bucket.*
+        - //storage.object.*
     - name: clusterViewer
       permissions:
         - apiService.list
