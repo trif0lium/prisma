@@ -1,3 +1,4 @@
+kind: Application
 spec:
   app: container
   resources:
