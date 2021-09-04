@@ -1,0 +1,26 @@
+kind: Application
+spec:
+  app: storage
+  resources:
+    - name: bucket
+      permissions:
+        - create
+        - update
+        - delete
+        - get
+        - list
+    - name: object
+      permissions:
+        - create
+        - update
+        - delete
+        - get
+        - list
+  roles:
+    - name: storageAdmin
+      permissions:
+        - bucket.*
+        - object.*
+    - name: objectAdmin
+      permissions:
+        - object.*
